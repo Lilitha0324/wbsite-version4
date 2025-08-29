@@ -1,0 +1,42 @@
+
+:root {
+  --brand-primary:#0a6cff;
+  --brand-secondary:#00b4d8;
+  --brand-dark:#0b1b34;
+  --text:#233041;
+  --muted:#5b6b7b;
+  --bg:#f6f8fb;
+  --card:#ffffff;
+  --ring: rgba(10,108,255,.2);
+  --shadow: 0 10px 30px rgba(3,18,44,.08);
+  --radius: 16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial}
+a{color:var(--brand-primary);text-decoration:none}
+img{max-width:100%;display:block}
+.container{width:min(1100px,92%);margin-inline:auto}
+header{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 1px 0 rgba(10,108,255,.06)}
+nav{display:flex;align-items:center;justify-content:space-between;padding:14px 5%}
+nav .logo{display:flex;align-items:center;gap:10px}
+nav .logo img{height:60px}
+nav a{margin-left:20px;font-weight:600;color:var(--text)}
+.btn{display:inline-block;background:var(--brand-primary);color:#fff;padding:10px 18px;border-radius:999px;font-weight:600;box-shadow:0 6px 15px var(--ring)}
+.btn.secondary{background:#e7efff;color:var(--brand-primary)}
+.hero{display:flex;align-items:center;justify-content:space-between;padding:60px 5%;background:#eef5ff}
+.hero-text{max-width:50%}
+.hero h1{font-size:42px;color:var(--brand-dark);margin-bottom:18px}
+.hero p{color:var(--muted);margin-bottom:22px}
+.hero img{max-width:40%;border-radius:12px;box-shadow:var(--shadow)}
+section{padding:52px 5%}
+h2{font-size:28px;margin-bottom:20px;color:var(--brand-dark)}
+.card{background:#fff;border-radius:var(--radius);padding:20px;box-shadow:var(--shadow);margin-bottom:20px}
+footer{background:var(--brand-primary);color:#fff;text-align:center;padding:30px;margin-top:40px}
+footer .logo{display:flex;justify-content:center;align-items:center;gap:10px;margin-bottom:10px}
+footer img{height:50px}
+@media(max-width:900px){
+  .hero{flex-direction:column;text-align:center}
+  .hero-text{max-width:100%}
+  .hero img{max-width:80%;margin-top:20px}
+  nav{flex-direction:column;gap:10px}
+}
